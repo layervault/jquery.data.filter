@@ -5,7 +5,8 @@
 At LayerVault, we make heavy use of filtering DOM elements by their data-* attributes. That's because we believe 
 JavaScript is the worst place to keep your Model.
 
-We might have 
+We might have a dozen or so data-* attributes attached to different DOM elements. You'll be surprised how much
+easier your life will be.
 
 ### Old Way
 
