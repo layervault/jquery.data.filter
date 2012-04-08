@@ -33,7 +33,7 @@ var versions = $('.Revision').dfilter('project-id');
 Host and serve out jquery.data.filter.js in a script tag:
 
 ```html
-<script src="/jquery.data.filter.js"></script>
+<script src="/jquery.data.filter.min.js"></script>
 ```
 
 ### Best Way
