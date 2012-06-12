@@ -2,7 +2,7 @@
 
 *Because the world is better through a filter.*
 
-At LayerVault, we make heavy use of filtering DOM elements by their data-* attributes. That's because we believe 
+At LayerVault, we make heavy use of filtering DOM elements by their data-* attributes. That's because we believe
 JavaScript is the worst place to keep your Model.
 
 We might have a dozen or so data-* attributes attached to different DOM elements. You'll be surprised how much
@@ -26,6 +26,12 @@ You can even opt to only check against existence of a non-blank data-* attribute
 var versions = $('.Revision').dfilter('project-id');
 ```
 
+Or, give it an array!
+
+```javascript
+var versions = $('.Revision').dfilter('project-id', [100, 101]);
+```
+
 ## Installation
 
 ### Quick and Dirty Way
@@ -42,4 +48,4 @@ Make sure this gets combined into your asset package. It's a small file and it'd
 
 ## Authors
 
-jquery.data.filter.js is created and maintained by [Kelly Sutton](http://kellysutton.com) of [LayerVault](http://layervault.com). It is released under the [MIT license](http://en.wikipedia.org/wiki/MIT_License). 
+jquery.data.filter.js is created and maintained by [Kelly Sutton](http://kellysutton.com) of [LayerVault](http://layervault.com). It is released under the [MIT license](http://en.wikipedia.org/wiki/MIT_License).
