@@ -5,6 +5,14 @@
     if (typeof value === "undefined" || value === "") {
       return this.filter('[data-' + attribute + ']');
     }
+    else if (typeof value === "boolean") {
+      if (value) { // value === true
+        return this.filter('[data-' + attribute + ']')
+      }
+      else { // value === false
+        return this.not('[data-' + attribute + ']');
+      }
+    }
     else if ($.isArray(value)) {
 
       // In the case that we have an array, we want to build a big multiple selector string:
