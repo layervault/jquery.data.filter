@@ -24,12 +24,19 @@ You can even opt to only check against existence of a non-blank data-* attribute
 
 ```javascript
 var versions = $('.Revision').dfilter('project-id');
+var sameVersions = $('.Revision').dfilter('project-id', true);
 ```
 
 Or, give it an array!
 
 ```javascript
 var versions = $('.Revision').dfilter('project-id', [100, 101]);
+```
+
+You can also filter using `true` and `false`. A value of `true` filters elements with that data attribute, even if the attribute is blank. A value of `false` will select all things without that data attribute:
+
+```javascript
+var versions = $('.Revision').dfilter('project-id', false); // Selects all revisions without a project-id
 ```
 
 ## Installation
