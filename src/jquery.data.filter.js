@@ -1,6 +1,11 @@
 (function($) {
   $.fn.dfilter = function(attribute, value) {
+
+    // sanitize
+    attribute = attribute.toLowerCase();
     attribute = attribute.replace(/^data-/, "");
+    attribute = attribute.replace('_', '-');
+    attribute = attribute.replace(' ', '-');
 
     if (typeof value === "undefined" || value === "") {
       return this.filter('[data-' + attribute + ']');
