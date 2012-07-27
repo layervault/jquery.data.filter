@@ -53,6 +53,8 @@ Host and serve out jquery.data.filter.js in a script tag:
 
 Make sure this gets combined into your asset package. It's a small file and it'd be a shame to waste a whole request on it.
 
-## Authors
+## About
 
-jquery.data.filter.js is created and maintained by [Kelly Sutton](http://kellysutton.com) of [LayerVault](http://layervault.com). It is released under the [MIT license](http://en.wikipedia.org/wiki/MIT_License).
+jquery.text.fadeto.js was originally developed for [LayerVault](http://layervault.com) by [Kelly Sutton](http://kellysutton.com).
+
+You can see more projects from LayerVault in the [LayerVault Cosmos](http://cosmos.layervault.com).
