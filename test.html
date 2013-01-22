@@ -2,12 +2,20 @@
 <html>
 <head>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script src="/src/jquery.data.filter.js"></script>
+  <script src="src/jquery.data.filter.js"></script>
 </head>
 <body>
   <div class="Revision">None</div>
   <div class="Revision" data-id>100</div>
   <div class="Revision" data-id="100">100</div>
   <div class="Revision" data-id="101">101</div>
+  <div class="Revision">100, 101</div>
+
+  <script>
+    $('.Revision').last().data('all-ids', { 100: true, 101: true, 102: false });
+    // For elements which store object data, we can access these with dfilter as well.
+    //   $('div').dfilter('all-ids', { 102: true });  => []
+    //   $('div').dfilter('all-ids', { 102: false }); => [<div class="Revision">100, 101</div>]
+  </script>
 </body>
 </html>
