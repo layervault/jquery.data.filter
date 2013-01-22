@@ -38,8 +38,8 @@ For your elements which store object literals, you can even give dfilter an obje
 ```javascript
 $('.Revision').last().data('all-ids', { 100: true, 101: true, 102: false });
 
-$('div').dfilter('all-ids', { 102: true });  => []
-$('div').dfilter('all-ids', { 102: false }); => [<div class="Revision">100, 101</div>]
+$('div').dfilter('all-ids', { 102: true });  // => []
+$('div').dfilter('all-ids', { 102: false }); // => [<div class="Revision">100, 101</div>]
 ```
 
 You can also filter using `true` and `false`. A value of `true` filters elements with that data attribute, even if the attribute is blank. A value of `false` will select all things without that data attribute:
